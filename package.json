@@ -1,0 +1,27 @@
+{
+  "name": "http-api-assignment",
+  "version": "1.0.0",
+  "description": "HTTP API",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Test Complete\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OliverH22/http-api-assignment.git"
+  },
+  "author": "Oliver Hindman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OliverH22/http-api-assignment"
+  },
+  "homepage": "https://github.com/OliverH22/http-api-assignment#readme"
+}
