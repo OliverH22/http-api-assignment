@@ -14,7 +14,7 @@ const urlStruct = {
   '/forbidden': jsonHandler.getForbidden,
   '/internal': jsonHandler.getInternal,
   '/notImplemented': jsonHandler.getNotImplemented,
-  notFound: jsonHandler.getNotFound,
+  notFound: jsonHandler.getBadRequest,
 };
 
 const onRequest = (request, response) => {
@@ -29,7 +29,7 @@ const onRequest = (request, response) => {
       urlStruct[parsedUrl.pathname](request, response, acceptTypes);
     }
   } else {
-    urlStruct.getNotFound(request, response, params);
+    urlStruct.notFound(request, response, params, acceptTypes);
   }
 };
 
